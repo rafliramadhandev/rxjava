@@ -20,15 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        whiteNotificationBar(amainBtnLocalsearch);
-    }
-
-    private void initView() {
-        amainBtnRemotesearch = findViewById(R.id.amain_btn_remotesearch);
-        amainBtnLocalsearch = findViewById(R.id.amain_btn_localsearch);
-    }
-
-    private void whiteNotificationBar(View view) {
+    
+        
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             int flags = view.getSystemUiVisibility();
             flags |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
@@ -36,4 +29,10 @@ public class MainActivity extends AppCompatActivity {
             getWindow().setStatusBarColor(Color.WHITE);
         }
     }
+
+    private void initView() {
+        amainBtnRemotesearch = findViewById(R.id.amain_btn_remotesearch);
+        amainBtnLocalsearch = findViewById(R.id.amain_btn_localsearch);
+    }
+
 }
