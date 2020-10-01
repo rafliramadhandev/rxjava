@@ -14,6 +14,9 @@
         <activity android:name=".view.RemoteSearchActivity"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.TrafficActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".view.LocalSearchActivity"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
